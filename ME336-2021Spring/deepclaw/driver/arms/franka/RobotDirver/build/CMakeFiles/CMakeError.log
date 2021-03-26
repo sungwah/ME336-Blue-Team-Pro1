@@ -1,0 +1,35 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/cherry/Franka/ME336-2021Spring-main/deepclaw/driver/arms/franka/RobotDirver/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_01e6a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_01e6a.dir/build.make CMakeFiles/cmTC_01e6a.dir/build
+make[1]: 进入目录“/home/cherry/Franka/ME336-2021Spring-main/deepclaw/driver/arms/franka/RobotDirver/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_01e6a.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_01e6a.dir/CheckSymbolExists.c.o   -c /home/cherry/Franka/ME336-2021Spring-main/deepclaw/driver/arms/franka/RobotDirver/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_01e6a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01e6a.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_01e6a.dir/CheckSymbolExists.c.o  -o cmTC_01e6a 
+CMakeFiles/cmTC_01e6a.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x1b)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_01e6a.dir/build.make:97: recipe for target 'cmTC_01e6a' failed
+make[1]: *** [cmTC_01e6a] Error 1
+make[1]: 离开目录“/home/cherry/Franka/ME336-2021Spring-main/deepclaw/driver/arms/franka/RobotDirver/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_01e6a/fast' failed
+make: *** [cmTC_01e6a/fast] Error 2
+
+File /home/cherry/Franka/ME336-2021Spring-main/deepclaw/driver/arms/franka/RobotDirver/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

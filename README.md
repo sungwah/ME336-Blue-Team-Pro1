@@ -76,7 +76,15 @@ We use the built-in function "cv2.getPerspectiveTransform(pts1, pts2)" provided 
 
 
 ## 项目完成度
-     
+
+![5](./image/5.jfif)
+
+![6](./image/6.jfif)
+
+![7](./image/7.jfif)
+
+![8](./image/8.jfif)
+
 
 ## 项目过程中遇到问题与解决方案
 - The gripper cannot be connected to the robotic arm. Solution: Reboot the system several times.

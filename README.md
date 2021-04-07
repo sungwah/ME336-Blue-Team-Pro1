@@ -77,6 +77,8 @@ We use the built-in function "cv2.getPerspectiveTransform(pts1, pts2)" provided 
 
 ## 项目完成度
 
+![9](./image/9.gif)
+
 ![5](./image/5.jfif)
 
 ![6](./image/6.jfif)
